@@ -1,0 +1,22 @@
+1. In a paragraph (at least 3 sentences), describe the process you took to solving the code.
+
+I read the requirements of the project first, especially for the requirements of the password validation and generation. I also looked at the requirements to get at least a B as I thought that would serve as a good baseline. I stored my username and password first, then did the code for the password validation by using boolean values and using a for loop as well as .charAt in order to check each character if it was an uppercase letter, a lowercase letter, or a number. Using those boolean values after the for loop checks it and updates them, I used if else if statements to print out the appropriate message if the password met the criteria or not. After that, I added in the feature for special symbols by putting the common ones in a string and using another for loop inside the original one to check if each character was present in the specialSymbols string.
+
+Finally, I implemented the password generator. I used a while loop to make sure the prompt is asked for the length in case the user inputs a length less than 8. Another while loop was used as well to ask if the user wanted special symbols in their password. I also decided on this in order to make sure the user only chooses between 0 and 1. I created arrays for the letters, numbers, and used .toCharArray to turn the string of specialSymbols into an array. Another for loop is used to randomize what to use for each index of the string. StringBuilder was used in order to keep appending new elements instead of constant concatenation. Lastly, an if statement was used to guarantee that a special symbol is included if the user approves. 
+
+2. Did you run into any difficulties as you worked on the code?
+
+I had some difficulty when implementing the use of the special symbols. I saw that these symbols had different ASCII codes and they weren’t in order. So, I just decided to put the most common ones or ones I could see on my laptops keyboard into a string and use for loops to just run through them and see if they are present for the validation. I turned them into an array for the password generation to put them individually if the user wishes.
+
+I also noticed when testing that my original code, which included the special symbols in the for loop which randomly chooses what to add to the password, didn't guarantee a special symbol. So, I made an if statement in order to randomly choose a position in the password and the .setCharAt to replace it with a special symbol.
+
+I also had a bit of difficulty with the curly braces as there were a lot of them and it sometimes got messy or some were missing for the code to run.
+
+3. If you could change anything or do anything differently, what would you do?
+
+I would like to add more special symbols instead of one for the password generation and if possible, to make my code more concise as I feel like it is pretty long and I used a lot of if statements and loops. 
+
+4. If you had more time, what would you add? Name 3 different things.
+
+Three different things that I would want to add are: 1. Generate Multiple Passwords at Once, 2. The Ability to save passwords that were generated, and 3. To be able to create a new account (new username and password) to use the program like a login system.
+

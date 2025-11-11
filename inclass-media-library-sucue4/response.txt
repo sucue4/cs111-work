@@ -1,0 +1,13 @@
+1. To the best you can, try to explain how the following code works:
+```
+Movie f = (Movie) m;
+```
+This line of code basically casts the variable m into a movie as it is originally a media object. This is done by using (Movie) and setting it to f which will give access to the movie specific features like budget and releaseYear. Casting converts the reference from Media to Movie. 
+
+2. To the best of your understanding, try to explain why we would use inheritance in this assignment with the Media class instead of having the Movie and TVShow classes on their own. What benefit does inheriting the Media class give us?
+
+Using inheritance allows movies and tvshows to share common properties like name, duration, genre, and rating. We can store both types of media in a single array which helps us to save time(benefit) and we don't have to repeat code which makes it easier to manage. We can also use shared methods for properties they have in common. Basically, it saves us time and makes our work easier to manage.
+
+3. What additional methods, if any, did you have to implement?
+
+In the TVShow.java, I had to add the getEpisodes() method as there wasn't any method made for me to complete longestShow(). For findBest(), I didn't add anymore as I already had getRating() provided for me in Media.java.

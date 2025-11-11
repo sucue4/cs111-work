@@ -1,0 +1,30 @@
+1. This lab is heavily focused on writing the contents out to a file. Thinking about Project 3, outline the process you will take to saving the Passwords and Users to a file.
+
+Based on this lab, it gives me a decent idea about how I can be able to make the password and user saving features for project 3. I can first think about how to implement something like the generateEvents where it will take in array and parse the information into individual parts like the name, password, if the user is premium, etc. Then, I can do something similar to FileWriter/writeFile to store the information of each user into a csv file. Basically I can add in features from Utility.java in this lab for my project and implement each method step-by-step. 
+
+2. This lab only includes Music Festivals, Art Exhibits, Sports Events, and Tech Conferences. What are other types of events you could add and what information would they store, assuming these alternative events expand upon the functionality of an "Event"?
+
+Here are some other type of events and what information they could store (aside from the name, venue, and start/end dates):
+
+1. Food Festival
+- Cuisine Type
+- Number of Vendors
+- Ticket Prices
+
+2. Charity Event/Fundraiser
+- Beneficiary's name
+- Donation Goal/What to Donate
+
+3. Workshops
+- Instructor's name
+- Required Materials
+- Topics
+
+
+3. Upcasting is used within this assignment (explained in class). In your own words and using examples from the code, what does this do?
+
+From this assignment, I can say that Upcasting basically treats a subclass object as its parent class type. In Main.java when I added new events, examples can be seen in lines 7-10. Upcasting allows for storing of multiple subclasses in a single array (Event[] in this case) as Java will treat each subclass as its parent type which is Event as they all inherit from that class. Upcasting allows different types of a things like events to be stored together in the same array.
+
+4. What benefit does inheritance have for this kind of project?
+
+Inheritance will be beneficial for this kind of project as it is quite lengthy and will require more advanced features. So, inheritance will allow me to reuse code and not just make it repetitive for different methods. It will basically make it easier for me to store user's passwords and names as well as identify if they are a premium user or not. I can use shared information allow all types to inherit these. For premium users, they can inherit from User and have additional features aside from those in that class. Overall, inheritance reduces code duplication and makes the code easier to maintain.
